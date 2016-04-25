@@ -8,8 +8,8 @@ angular.module('app.controllers', [])
 
 })
    
-.controller('eatingPlansCtrl', function($scope) {
-
+.controller('eatingAdviceCtrl', function($scope, $http) {
+    
 })
    
 .controller('twitterFeedsCtrl', function($scope) {
@@ -40,11 +40,11 @@ angular.module('app.controllers', [])
 
 })
    
-.controller('benchPressCtrl', function($scope) {
+.controller('cableCrossoverCtrl', function($scope) {
 
 })
    
-.controller('cableCrossoverCtrl', function($scope) {
+.controller('benchPressCtrl', function($scope) {
 
 })
    
@@ -186,5 +186,103 @@ angular.module('app.controllers', [])
    
 .controller('singleArmDumbbellRowCtrl', function($scope) {
 
+})
+   
+.controller('weightLossMealIdeasCtrl', function($scope, $http) {
+        $scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://pauldolan123.cloudapp.net/eatingloss.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
+})
+   
+.controller('weightGainMealIdeasCtrl', function($scope, $http) {
+    $scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://pauldolan123.cloudapp.net/eatinggain.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
+})
+   
+.controller('healthySnackIdeasCtrl', function($scope, $http) {
+        $scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://pauldolan123.cloudapp.net/eatingsnacks.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
+})
+   
+.controller('noGymHitWorkoutCtrl', function($scope, $http) {
+        $scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://pauldolan123.cloudapp.net/nogymhit.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
+})
+   
+.controller('15MinuteMuscleWorkoutCtrl', function($scope, $http) {
+        $scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://pauldolan123.cloudapp.net/15minute.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
+})
+   
+.controller('shortCircuitTrainingWorkoutCtrl', function($scope, $http) {
+        $scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://pauldolan123.cloudapp.net/shortcircuit.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
+})
+   
+.controller('allAboutAbsWorkoutCtrl', function($scope, $http) {
+        $scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://pauldolan123.cloudapp.net/abs.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
  

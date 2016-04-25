@@ -36,12 +36,12 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('menu.eatingPlans', {
-    url: '/page6',
+  .state('menu.eatingAdvice', {
+    url: '/page59',
     views: {
       'side-menu21': {
-        templateUrl: 'templates/eatingPlans.html',
-        controller: 'eatingPlansCtrl'
+        templateUrl: 'templates/eatingAdvice.html',
+        controller: 'eatingAdviceCtrl'
       }
     }
   })
@@ -112,22 +112,22 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('menu.benchPress', {
-    url: '/page14',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/benchPress.html',
-        controller: 'benchPressCtrl'
-      }
-    }
-  })
-
   .state('menu.cableCrossover', {
     url: '/page15',
     views: {
       'side-menu21': {
         templateUrl: 'templates/cableCrossover.html',
         controller: 'cableCrossoverCtrl'
+      }
+    }
+  })
+
+  .state('menu.benchPress', {
+    url: '/page58',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/benchPress.html',
+        controller: 'benchPressCtrl'
       }
     }
   })
@@ -478,6 +478,76 @@ angular.module('app.routes', [])
       'side-menu21': {
         templateUrl: 'templates/singleArmDumbbellRow.html',
         controller: 'singleArmDumbbellRowCtrl'
+      }
+    }
+  })
+
+  .state('menu.weightLossMealIdeas', {
+    url: '/page51',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/weightLossMealIdeas.html',
+        controller: 'weightLossMealIdeasCtrl'
+      }
+    }
+  })
+
+  .state('menu.weightGainMealIdeas', {
+    url: '/page52',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/weightGainMealIdeas.html',
+        controller: 'weightGainMealIdeasCtrl'
+      }
+    }
+  })
+
+  .state('menu.healthySnackIdeas', {
+    url: '/page53',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/healthySnackIdeas.html',
+        controller: 'healthySnackIdeasCtrl'
+      }
+    }
+  })
+
+  .state('menu.noGymHitWorkout', {
+    url: '/page54',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/noGymHitWorkout.html',
+        controller: 'noGymHitWorkoutCtrl'
+      }
+    }
+  })
+
+  .state('menu.15MinuteMuscleWorkout', {
+    url: '/page55',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/15MinuteMuscleWorkout.html',
+        controller: '15MinuteMuscleWorkoutCtrl'
+      }
+    }
+  })
+
+  .state('menu.shortCircuitTrainingWorkout', {
+    url: '/page56',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/shortCircuitTrainingWorkout.html',
+        controller: 'shortCircuitTrainingWorkoutCtrl'
+      }
+    }
+  })
+
+  .state('menu.allAboutAbsWorkout', {
+    url: '/page57',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/allAboutAbsWorkout.html',
+        controller: 'allAboutAbsWorkoutCtrl'
       }
     }
   })
